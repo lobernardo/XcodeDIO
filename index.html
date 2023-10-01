@@ -2,19 +2,14 @@
 
 import Foundation
 
-
 let constante: String = "Steve"
-
 
 var variavelOpcional: String? = "Jobs"
 
+print("Variável opcional: \(variavelOpcional ?? "Wozniak")")
 
-print("Valor da variável opcional: \(variavelOpcional ?? "Wozniak")")
-
-// Optional Binding na variável opcional
 if let desembrulhada = variavelOpcional {
-   
-    print("Valor desembrulhado da variável opcional: \(constante) \(desembrulhada)")
+     print("Valor desembrulhado da variável opcional: \(constante) \(desembrulhada)")
 } else {
     print("A variável opcional está vazia.")
 }
